@@ -10,7 +10,8 @@ Para criar um projeto em node.js(levando em consideração que o node.js, já in
 Obs: Será criado automaticamente uma pasta node_modules, onde irá ser armazenado todas as bibliotecas.
 
 2º No cmd/power shell, ou até mesmo na sua aplicação de editor de código, contedendo um terminal, desde que esteja
-dentro da pasta correspondente a sua aplicação, insira "npm install express", para instalar o framework do node.js;
+dentro da pasta correspondente a sua aplicação, insira "npm install express", para instalar o framework do node.js,
+e instale "npm install nodemon -D", para quando for solicitado rodar seu programa possa apenas inserir npm start;
 
 Obs: Caso dê algum erro de permissão entre como modo adm seja do cmd/power shell ou edito de código.
 

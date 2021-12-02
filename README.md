@@ -11,6 +11,7 @@ Obs: Será criado automaticamente uma pasta node_module, onde irá ser armazenad
 dentro da pasta correspondente a sua aplicação, insira "npm install express", para instalar o framework do node.js;
 Obs: irá criar uma pasta node_modules e outro arquivo chamado, package-lock.json, caso de algum erro de permissão
 entre como modo adm seja do cmd/power shell ou edito de código.
+
 3º Instalar uma query sql, vamos utilizar o knex, o comando é "npm install knex", após vamos instalr o DB
 "npm install pg";
 4º Após feito isso, vá no arquivo knexfile.js, la você irá encontrar as configurações para seu DB.

@@ -1,5 +1,6 @@
                                 ######### Projeto Facile Soluções em sistemas #########
-----------------------------------------------//------------------------------------------------------------------
+
+--------------------------------------------------------------------------------------------------------------------
                                       
 				      ######### Iniciando com node.js ##########
 Para criar um projeto em node.js(levando em consideração que o node.js, já instalado), teremos os seguintes passos:
@@ -14,6 +15,7 @@ entre como modo adm seja do cmd/power shell ou edito de código.
 
 3º Instalar uma query sql, vamos utilizar o knex, o comando é "npm install knex", após vamos instalr o DB
 "npm install pg";
+
 4º Após feito isso, vá no arquivo knexfile.js, la você irá encontrar as configurações para seu DB.
 Em development altere para as configurações que coincidem com o seu DB, ou seja versão, host, user, port, password; 
 development: {
@@ -31,16 +33,21 @@ development: {
 		  directory: './src/database/migrations'
 		}
   	},
+
 5º Vamos instalar a biblioteca de criptografar, neste caso vamos utilizar a crypto-js, "npm install crypto-js"
+
 6º Por último já com os arquivos pegos do git, insira npm start para rodar a aplicação.
+
 7º Em meu caso utilizo o app insomnia para realizar testes de back-end, use o mesmo ou de sua preferencia, e
 coloque na URL, o link http://localhost:3333/encripts, com o metodo POST, e insira em JSON:
 {
 	"name": "Faz que - da certo!"
 }
 Após envie, e irá receber o ID e o name criptografado.
+
 8º Caso insira um nome em branco, irá lhe retornar uma mensagem de erro:
 code: "E_VALIDATION_FAILURE", message: "O campo \"name\" é obrigatório" 
+
 9º Para realizar a busca pelo ID, você cria com o metodo GET, lembrando em sua aplicação de teste back-end, e
 insira na URL http://localhost:3333/encripts/1 o número é um exemplo de ID para colocar, e assim envie, o retorno
 deve ser, o ID, com o nome descriptografado;

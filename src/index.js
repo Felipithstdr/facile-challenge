@@ -10,6 +10,6 @@ const port = process.env.PORT || 5000;
 
 app.listen(3333);
 //Para rodar localmente, remova o comentário da linha abaixo, e comente a linha subsequente;
-/*app.listen(PORT, () => {
+{/*app.listen(PORT, () => {
 	console.log("Server started......." + PORT);
-});
+});*/}

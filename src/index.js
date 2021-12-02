@@ -9,7 +9,7 @@ app.use(routes);
 const port = process.env.PORT || 5000;
 
 app.listen(3333);
-//Para rodar localmente, remova o comentário da linha abaixo, e comente a linha subsequente;
+//Para rodar via servidor, remova o comentário da linha abaixo, e comente a linha acima;
 /*app.listen(PORT, () => {
 	console.log("Server started......." + PORT);
 });*/

@@ -2,6 +2,7 @@
 ----------------------------------------------//------------------------------------------------------------------
                                       ######### Iniciando com node.js ##########
 Para criar um projeto em node.js(levando em consideração que o node.js, já instalado), teremos os seguintes passos:
+
 1º Abra seu CMD ou power shell, percorra até a pasta que deseja salvar, e insira o seguinte comando: "npm install";
 Obs: Será criado automaticamente uma pasta node_module, onde irá ser armazenado todas as bibliotecas.
 2º No cmd/power shell, ou até mesmo na sua aplicação de editor de código, contedendo um terminal, desde que esteja

@@ -17,22 +17,22 @@ dentro da pasta correspondente a sua aplicação, insira "npm install express", 
 
 4º Após feito isso, vá no arquivo knexfile.js, la você irá encontrar as configurações para seu DB.
 Em development altere para as configurações que coincidem com o seu DB, ou seja versão, host, user, port, password; 
-   development: {
-	
-	client: 'pg',
-	version: '6.1',
-	connection: {
-		host : '127.0.0.1',
-		user : 'postgres',
-		port : 5432,
-		password : '12345',
-      		database : 'facile_challenge',
-		filename: './src/database/db.pg'
-    	},
-	migrations: {
-		directory: './src/database/migrations'
-	}
-  },
+
+	development: {
+		client: 'pg',
+		version: '6.1',
+		connection: {
+			host : '127.0.0.1',
+			user : 'postgres',
+			port : 5432,
+			password : '12345',
+			database : 'facile_challenge',
+			filename: './src/database/db.pg'
+    		},
+		migrations: {
+			directory: './src/database/migrations'
+		}
+	},
 
 5º Vamos instalar a biblioteca de criptografar, neste caso vamos utilizar a crypto-js, "npm install crypto-js"
 
@@ -40,17 +40,17 @@ Em development altere para as configurações que coincidem com o seu DB, ou sej
 
 7º Em meu caso utilizo o app insomnia para realizar testes de back-end, use o mesmo ou de sua preferencia, e
 coloque na URL, o link http://localhost:3333/encripts, com o metodo POST, e insira em JSON:
-
-{
-	"name": "Faz que - da certo!"
-}
+	
+	{
+		"name": "Faz que - da certo!"
+	}
 Após envie, e irá receber o ID e o name criptografado.
 
 8º Caso insira um nome em branco, irá lhe retornar uma mensagem de erro:
 code: "E_VALIDATION_FAILURE", message: "O campo \"name\" é obrigatório" 
 
 9º Para realizar a busca pelo ID, você cria com o metodo GET, lembrando em sua aplicação de teste back-end, e
-insira na URL http://localhost:3333/encripts/1 o número é um exemplo de ID para colocar, e assim envie, o retorno
+insira na URL http://localhost:3333/encripts/1 o último número é um exemplo de ID para colocar, e assim envie, o retorno
 deve ser, o ID, com o nome descriptografado;
 
 Obs: Caso queira ver todo o banco, basta remover o ID, e mantenha a URL http://localhost:3333/encripts, no metodo

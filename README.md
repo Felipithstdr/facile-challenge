@@ -17,25 +17,22 @@ dentro da pasta correspondente a sua aplicação, insira "npm install express", 
 
 4º Após feito isso, vá no arquivo knexfile.js, la você irá encontrar as configurações para seu DB.
 Em development altere para as configurações que coincidem com o seu DB, ou seja versão, host, user, port, password; 
-development: {
+   development: {
 	
 	client: 'pg',
-    	
 	version: '6.1',
-    	
 	connection: {
-      		
 		host : '127.0.0.1',
 		user : 'postgres',
 		port : 5432,
-			password : '12345',
+		password : '12345',
       		database : 'facile_challenge',
-			filename: './src/database/db.pg'
+		filename: './src/database/db.pg'
     	},
-		migrations: {
-		  directory: './src/database/migrations'
-		}
-  	},
+	migrations: {
+		directory: './src/database/migrations'
+	}
+  },
 
 5º Vamos instalar a biblioteca de criptografar, neste caso vamos utilizar a crypto-js, "npm install crypto-js"
 
@@ -43,6 +40,7 @@ development: {
 
 7º Em meu caso utilizo o app insomnia para realizar testes de back-end, use o mesmo ou de sua preferencia, e
 coloque na URL, o link http://localhost:3333/encripts, com o metodo POST, e insira em JSON:
+
 {
 	"name": "Faz que - da certo!"
 }

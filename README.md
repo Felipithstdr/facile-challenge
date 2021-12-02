@@ -6,10 +6,12 @@
 Para criar um projeto em node.js(levando em consideração que o node.js, já instalado), teremos os seguintes passos:
 
 1º Abra seu CMD ou power shell, percorra até a pasta que deseja salvar, e insira o seguinte comando: "npm install";
+
 Obs: Será criado automaticamente uma pasta node_module, onde irá ser armazenado todas as bibliotecas.
 
 2º No cmd/power shell, ou até mesmo na sua aplicação de editor de código, contedendo um terminal, desde que esteja
 dentro da pasta correspondente a sua aplicação, insira "npm install express", para instalar o framework do node.js;
+
 Obs: irá criar uma pasta node_modules e outro arquivo chamado, package-lock.json, caso de algum erro de permissão
 entre como modo adm seja do cmd/power shell ou edito de código.
 
@@ -51,5 +53,6 @@ code: "E_VALIDATION_FAILURE", message: "O campo \"name\" é obrigatório"
 9º Para realizar a busca pelo ID, você cria com o metodo GET, lembrando em sua aplicação de teste back-end, e
 insira na URL http://localhost:3333/encripts/1 o número é um exemplo de ID para colocar, e assim envie, o retorno
 deve ser, o ID, com o nome descriptografado;
+
 Obs: Caso queira ver todo o banco, basta remover o ID, e mantenha a URL http://localhost:3333/encripts, no metodo
 GET;

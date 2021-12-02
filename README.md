@@ -7,7 +7,7 @@ Para criar um projeto em node.js(levando em consideração que o node.js, já in
 
 1º Abra seu CMD ou power shell, percorra até a pasta que deseja salvar, e insira o seguinte comando: "npm install";
 
-Obs: Será criado automaticamente uma pasta node_module, onde irá ser armazenado todas as bibliotecas.
+Obs: Será criado automaticamente uma pasta node_modules, onde irá ser armazenado todas as bibliotecas.
 
 2º No cmd/power shell, ou até mesmo na sua aplicação de editor de código, contedendo um terminal, desde que esteja
 dentro da pasta correspondente a sua aplicação, insira "npm install express", para instalar o framework do node.js;
@@ -18,12 +18,16 @@ dentro da pasta correspondente a sua aplicação, insira "npm install express", 
 4º Após feito isso, vá no arquivo knexfile.js, la você irá encontrar as configurações para seu DB.
 Em development altere para as configurações que coincidem com o seu DB, ou seja versão, host, user, port, password; 
 development: {
+	
 	client: 'pg',
-    	version: '6.1',
-    	connection: {
-      		host : '127.0.0.1',
-			user : 'postgres',
-			port : 5432,
+    	
+	version: '6.1',
+    	
+	connection: {
+      		
+		host : '127.0.0.1',
+		user : 'postgres',
+		port : 5432,
 			password : '12345',
       		database : 'facile_challenge',
 			filename: './src/database/db.pg'

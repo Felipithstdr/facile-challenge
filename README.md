@@ -42,7 +42,7 @@ Em development altere para as configurações que coincidem com o seu DB, ou sej
 coloque na URL, o link http://localhost:3333/encripts, com o metodo POST, e insira em JSON:
 	
 	{
-		"name": "Faz que - da certo!"
+		"name": "Faz certo - que da certo!"
 	}
 Após envie, e irá receber o ID e o name criptografado.
 

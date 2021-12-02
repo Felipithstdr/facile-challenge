@@ -6,10 +6,11 @@ const app = express();
 app.use (express.json());
 app.use(routes);
 
-const port = process.env.PORT || 5000;
+//Para rodar localmente, remova o comentário da linha abaixo, e comente a linha subsequente;
+//app.listen(3333);
 
-app.listen(3333);
-//Para rodar via servidor, remova o comentário da linha abaixo, e comente a linha acima;
-/*app.listen(PORT, () => {
-	console.log("Server started......." + PORT);
-});*/
+var server_port = process.env.YOUR_PORT || process.env.PORT || 80;
+var server_host = process.env.YOUR_HOST || '0.0.0.0';
+server.listen(server_port, server_host, function() {
+    console.log('Listening on port %d', server_port);
+});
